@@ -235,7 +235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bulunan Hazine: 0'
+  m_Text: 'Hazine: 0/8'
 --- !u!222 &226767535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df024c5526350d14f9b1adfd9714c671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChestOpenSound: {fileID: 8300000, guid: 6ce2f3d72993dc2499acd3878a7a893b, type: 3}
+  ChestOpenSound: {fileID: 8300000, guid: 008c78c01448db044a744a9ae9672c44, type: 3}
   FoundChestText: {fileID: 226767534}
   TotalChest: 8
 --- !u!114 &2042357102
