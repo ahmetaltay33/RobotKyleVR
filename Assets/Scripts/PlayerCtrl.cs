@@ -4,11 +4,12 @@ using UnityEngine.UI;
 public class PlayerCtrl : MonoBehaviour
 {
     private Animator _animator;
-    private int _distanceOfRaycast = 5;
     private RaycastHit _hit;
     private AudioSource _audioSource;
     private int _totalLoot = 0;
-
+    
+    [SerializeField]
+    public int DistanceOfRaycast = 8;
     [SerializeField]
     public AudioClip ChestOpenSound;
     [SerializeField]
@@ -35,7 +36,7 @@ public class PlayerCtrl : MonoBehaviour
     private void InteractingObjectWithRayCast()
     {
         var ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-        if (Physics.Raycast(ray, out _hit, _distanceOfRaycast))
+        if (Physics.Raycast(ray, out _hit, DistanceOfRaycast))
         {
             if (Input.GetButtonDown("Fire1") && _hit.transform.CompareTag("TreasureChest"))
             {
