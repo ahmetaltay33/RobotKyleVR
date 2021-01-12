@@ -14,6 +14,8 @@ public class PlayerCtrl : MonoBehaviour
     [SerializeField]
     public Text FoundChestText;
     [SerializeField]
+    public GameObject EndGameObject;
+    [SerializeField]
     public int TotalChest;
 
     private void Start()
@@ -52,6 +54,8 @@ public class PlayerCtrl : MonoBehaviour
                 }
 
                 FoundChestText.text = $"Hazine: {_totalLoot}/{TotalChest}";
+                if (_totalLoot == TotalChest)
+                    EndGameObject.SetActive(true);
             }
         }
     }
