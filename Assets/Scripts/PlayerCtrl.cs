@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
 {
     private Animator _animator;
-    private int _distanceOfRaycast = 10;
+    private int _distanceOfRaycast = 5;
     private RaycastHit _hit;
     private AudioSource _audioSource;
     private int _totalLoot = 0;
